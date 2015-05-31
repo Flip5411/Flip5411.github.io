@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="../libraries/jquery-2.1.4.min.js"></script>   
+		<script src="../libraries/jquery-ui.min.js"></script>
+		<script src="../libraries/jquery.tabletojson.min.js"></script>
+		<script src="../libraries/JSONtoCSVconverter.js"></script>
+		<link rel="stylesheet" type="text/css" href="../libraries/jquery-ui.min.css">
+		<link rel="stylesheet" type="text/css" href="../navbar/navbar.css">
+		<script src="../navbar/navbar.js"></script>
+		<link rel="stylesheet" type="text/css" href="simple_RC.css">
+		<script src="simple_RC.js"></script>
+	</head>
+	<body>
+<!-- NAVBAR -->
+		<div class="navbar">
+		    <div class="logo-area">
+		        <a href="../index.html">
+		          <img src="../images/poop-logo.png">
+		          <h1>FLIP</h1>
+		        </a>
+		    </div>
+		    <div id="menu-area">
+		        <div class="btn-container">
+			        <a class="button" id="in-here-btn" href="#">Pages in here... <span class="caret"></span></a>
+			        <ul class="dropdown-menu" id="internal-links">
+			            <li><a href="../ffxii/ffxii_calculator.html">FFXII Calculator</a></li>
+			            <li><a href="../simple_rate_card/simple_RC.html">Simple Rate Card</a></li>
+			            <li><a href="../testerrorlink.html">I'm feeling unlucky!</a></li>
+			        </ul>
+		        </div>
+		        <div class="btn-container">
+			        <a class="button" id="out-there-btn" href="#">Sites out there... <span class="caret"></span></a>
+		            <ul class="dropdown-menu" id="external-links">
+			            <li><a href="http://henryscrapeteria.tumblr.com/" target="_blank">Bro's Doodles</a></li>
+			            <li><a href="https://www.flickr.com/photos/jggj/" target="_blank">Dad's Photos</a></li>
+		          	</ul>
+		        </div>    
+		    </div>
+		</div>
+<!-- CONTROL PANEL -->
+		<div class="user_inputs open-panel">
+			<form id="form-inputs">
+				<div class="platform_select">
+					<formset>
+						<legend><b>Select Platform(s)</b></legend>
+						<p>Which platform(s) would you like included in the campaign?</p>
+						<input id="selectPlatTwit" type="checkbox" value="Twitter" checked>Twitter</input><br>
+						<input id="selectPlatInsta" type="checkbox" value="Instagram" checked>Instagram</input><br>
+						<input id="selectPlatFb" type="checkbox" value="Facebook" checked>Facebook</input><br>
+					</formset>
+				</div>
+				<div class="product_select">
+					<formset>
+						<legend><b>Select Product Type</b></legend>
+						<p>Will influencers need to distribute pre-made content or create their own content?</p>
+						<input id="selectProdDistro" name="product-choice" type="radio" value="Distribution" checked>Content Distribution</input><br>
+						<input id="selectProdCreate" name="product-choice" type="radio" value="Creation">Content Creation</input><br>
+					</formset>
+				</div>
+				<hr>
+				<div class="budget_input">
+					<formset>
+						<legend><b>Input Budget</b></legend>
+						<p>Please input the total product value you wish to deliver the client (without Added Value), followed by the Added Value (if any).</p>
+						Product Value: $<input id="prodValInput" type="number" name="product_value" value="50000">
+						Added Value: $<input id="addValInput" type="number" name="added_value" value="0">
+					</formset>
+				</div>
+			</form>
+			<div class="input-btn-group">
+				<a class="input-btn" id="reset-inputs">Reset inputs</a> 
+				<a class="input-btn" id="add-to-rc">Add to Rate Card</a>
+			</div>
+			<div class="input-toggle">
+				<div class="toggle-lines"></div>
+				<div class="toggle-lines"></div>
+				<div class="toggle-lines"></div>
+			</div>
+		</div>
+<!-- RATE CARD -->
+		<div class="RC_output">
+			<h2>Rate Card:</h2>
+			<div class="tb-btn-group">
+				<a href="#" class="tb-btn" id="clear-tb">Clear table</a>
+				<a href="#" class="tb-btn" id="download"><span class="ui-icon ui-icon-arrowthickstop-1-s"></span>Download to excel</a>
+			</div>
+			<table id="rate-card-table">
+				<thead>
+					<tr>
+						<th>Product(s)</th>
+						<th>Platform(s)</th>
+						<th>Product Value</th>
+						<th>Added value</th>
+						<th>Client Cost</th>
+						<th>Effective CPM</th>
+						<th>True Reach Impressions</th>
+					</tr>
+				</thead>
+				<tbody>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="2">Total:</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</tfoot>
+			</table>
+		</div>
+	</body>
+</html>
