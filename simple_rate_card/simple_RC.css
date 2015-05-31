@@ -1,0 +1,319 @@
+/* jquery ui icons */
+.ui-icon {
+	background-image: url("../libraries/images/ui-icons_ffffff_256x240.png");
+}
+
+/* ----- control panel ------ */
+.user_inputs {
+	position: relative;
+	top: -245px;
+	height: 345px;
+	width: 864px;
+	margin-left: auto;
+	margin-right: auto;
+  	background-color: #f5f5f5;
+  	border-radius: 0px 0px 10px 10px;
+  	box-shadow: 1px 3px 8px 2px #444;
+  	z-index: 1;
+}
+
+.open-panel {
+	top: 53px;
+}
+
+/* platform selection */
+.platform_select {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	width: 410px;
+	height: 150px;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+/* product selection */
+.product_select {
+	position: absolute;
+	top: 10px;
+	right: 0px;
+	width: 410px;
+	height: 150px;
+	padding: 10px;
+	border-radius: 10px;
+} 
+
+/* input divider */
+hr {
+	position: absolute;
+	top: 165px;
+	left: 20px;
+	width: 820px;
+	border-top: 2px solid #eee;
+  	border-bottom: 2px solid #fff;
+}
+
+/* budget input */
+.budget_input {
+	position: absolute;
+	bottom: 35px;
+	left: 10px;
+	width: 540px;
+	height: 110px;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.budget_input input {
+	margin-right: 20px;
+	border: 1px solid #aaa;
+	border-radius: 4px;
+	cursor: text;
+	background-color: #fff;
+	box-shadow: -1px 3px 5px 1px #eee inset;
+	font-size: 100%;
+	width: 120px;
+}
+
+/* control panel buttons */
+.input-btn-group {
+	position: absolute;
+	display: block;
+	bottom: 65px;
+	right: 80px;
+	width: 150px;
+	white-space: normal;
+}
+
+.input-btn {
+	float: left;
+	padding: 4px 12px;
+	text-align: center;
+	line-height: 20px;
+	vertical-align: middle;
+	cursor: pointer;
+	color: #333;
+	border: 1px solid #ccc;
+	border-bottom-color: #b3b3b3;
+	border-radius: 5px;
+	width: 100%;
+}
+
+#reset-inputs {
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-bottom: 0px;
+	background-image: linear-gradient(to bottom, #fff, #e6e6e6);
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+}
+
+#reset-inputs:hover {
+	background-image: linear-gradient(to bottom, #eee, #d5d5d5);
+}
+
+#add-to-rc {
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	color: #fff;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	background-image: linear-gradient(to bottom, #08c, #0044cc);
+	border-color: #0044cc #0044cc #002a80;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#add-to-rc:hover {
+	background-image: linear-gradient(to bottom, #07b, #0033bb);
+}
+
+/* control panel toggle */
+.input-toggle {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	padding-bottom: 8px;
+	background-color: #f5f5f5;
+  	border-radius: 0px 0px 10px 10px;
+  	cursor: pointer;
+}
+
+.toggle-lines {
+	width: 300px;
+	margin: auto;
+	border-top: 4px solid #ddd;
+  	border-bottom: 1px solid #fff;
+  	margin-bottom: 2px;
+}
+
+/* ------- table output -------- */
+.RC_output {
+	position: relative;
+	top: -240px;
+	padding: 0px 10px;
+	margin-right: 30px;
+}
+
+.RC_output h2 {
+	position: absolute;
+	display: block;
+	top: 0px;
+}
+
+/* output action buttons */
+.tb-btn-group {
+	position: absolute;
+	top: 50px;
+	vertical-align: middle;
+	display: inline-block;
+	margin-top: 0px;
+	margin-bottom: 20px;
+	padding: 5px 0px;
+	white-space: nowrap;
+}
+
+.tb-btn {
+	float: left;
+	padding: 4px 12px;
+	text-align: center;
+	line-height: 20px;
+	vertical-align: middle;
+	cursor: pointer;
+	color: #333;
+	border: 1px solid #ccc;
+	border-bottom-color: #b3b3b3;
+	border-radius: 5px;
+}
+
+#clear-tb {
+	border-bottom-right-radius: 0px;
+	border-top-right-radius: 0px;
+	border-right: 0px;
+	background-image: linear-gradient(to bottom, #fff, #e6e6e6);
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+}
+
+#clear-tb:hover {
+	background-image: linear-gradient(to bottom, #eee, #d5d5d5);
+}
+
+#download {
+	border-bottom-left-radius: 0px;
+	border-top-left-radius: 0px;
+	color: #fff;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	background-image: linear-gradient(to bottom, #62c462, #51a351);
+	border-color: #51a351 #51a351 #387038;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+}
+
+.ui-icon-arrowthickstop-1-s {
+	display: inline-block;
+	vertical-align: middle;
+	padding-bottom: 2px;
+	padding-right: 3px;
+}
+
+#download:hover {
+	background-image: linear-gradient(to bottom, #51b351, #409240);
+}
+
+/* rate card table output */
+.RC_output table {
+	position: absolute;
+	top: 100px;
+	display: table;
+	margin-top: 0px;
+	width: 100%;
+}
+
+.RC_output thead th {
+	display: table-cell;
+	border: none;
+	margin: 1px;
+	padding: 5px 20px;
+	background-color: #006A72;
+	border-bottom: 1px solid #ebebeb;
+	color: white;
+	text-transform: uppercase;
+}
+
+.RC_output thead th:first-child {
+	border-radius: 10px 0px 0px 0px;
+}
+
+.RC_output thead th:last-child {
+	border-radius: 0px 10px 0px 0px;
+}
+
+.RC_output tbody tr:nth-child(odd) td:not(:last-child) {
+	display: table-cell;
+	border: none;
+	margin: 1px;
+	padding: 5px 20px;
+	background-color: #f8f8f8;
+	border-right: 1px solid #ebebeb;
+}
+
+.RC_output tbody tr:nth-child(even) td:not(:last-child) {
+	display: table-cell;
+	border: none;
+	margin: 1px;
+	padding: 5px 20px;
+	background-color: #e5e5e5;
+	border-right: 1px solid #e3e3e3;
+}
+
+.RC_output tbody td {
+	text-align: right;
+}
+
+.RC_output tbody td:nth-child(1), .RC_output tbody td:nth-child(2) {
+	text-align: center;
+}
+
+
+.RC_output tbody td:last-child a {
+	border-radius: 50%;
+	background-image: linear-gradient(to bottom, #eee, #d5d5d5);
+	border: 1px solid #ddd;
+	margin-left: 5px;
+	margin-right: 20px;
+	padding: 0px 2px 3px 2px;
+}
+
+.ui-icon-minusthick {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.RC_output tbody td:last-child a:hover {
+	background-image: linear-gradient(to bottom, #E81919, #d70808);
+	border: 1px solid #d00;
+	border-bottom-color: #b50606;
+	box-shadow: 1px 1px 5px 1px #aaa;
+}
+
+.RC_output tfoot td {
+	display: table-cell;
+	border: none;
+	margin: 1px;
+	padding: 5px 20px;
+	background-color: #006A72;
+	border-bottom: 1px solid #ebebeb;
+	color: white;
+	font-weight: bold;
+}
+
+.RC_output tfoot td:first-child {
+	border-radius: 0px 0px 0px 10px;
+	text-align: right;
+}
+
+.RC_output tfoot td:last-child {
+	border-radius: 0px 0px 10px 0px;
+}

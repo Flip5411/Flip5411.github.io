@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="../libraries/jquery-2.1.4.min.js"></script>   
+  <link rel="stylesheet" type="text/css" href="../navbar/navbar.css">
+  <script src="../navbar/navbar.js"></script>
+  <link rel="stylesheet" type="text/css" href="ffxii_calculator.css" />
+	<script src="ffxii_calculator.js"></script>
+</head>
+<body>
+  <div class="navbar">
+      <div class="logo-area">
+        <a href="../index.html">
+          <img src="../images/poop-logo.png">
+          <h1>FLIP</h1>
+        </a>
+      </div>
+      <div id="menu-area">
+        <div class="btn-container">
+            <a class="button" id="in-here-btn" href="#">Pages in here... <span class="caret"></span></a>
+          <ul class="dropdown-menu" id="internal-links">
+            <li><a href="../ffxii/ffxii_calculator.html">FFXII Calculator</a></li>
+            <li><a href="../simple_rate_card/simple_RC.html">Simple Rate Card</a></li>
+            <li><a href="../testerrorlink.html">I'm feeling unlucky!</a></li>
+          </ul>
+          </div>
+          <div class="btn-container">
+            <a class="button" id="out-there-btn" href="#">Sites out there... <span class="caret"></span></a>
+            <ul class="dropdown-menu" id="external-links">
+            <li><a href="http://henryscrapeteria.tumblr.com/" target="_blank">Bro's Doodles</a></li>
+            <li><a href="https://www.flickr.com/photos/jggj/" target="_blank">Dad's Photos</a></li>
+          </ul>
+        </div>    
+      </div>
+  </div>
+  <div class="user-inputs">
+    <form>
+        <div class="character-stats">
+            <formset>
+                <legend><b>Character Stats</b></legend> 
+                Name:<input type="text" name="charName"><br>
+                Level:<input type="number" name="charLvl"><br>
+                Strength:<input type="number" name="charStr"><br>
+                Magic:<input type="number" name="charMag"><br>
+                Speed:<input type="number" name="charSpeed"><br>
+                Vitality:<input type="number" name="charVit"><br>
+            </formset>
+        </div>
+        <div class="enemy-stats">
+            <formset>
+                <legend><b>Enemy Stats</b></legend> 
+                Level:<input type="number" name="enLvl"><br>
+                Defense:<input type="text" name="enDef" value="auto" readonly>*<br>
+                Magic Defense:<input type="text" name="enMagDef" value="auto" readonly>*<br>
+                <p class="ref-notes">*assumes average level:defense or level:magic defense ratio from a sample of enemy stats</p>
+            </formset>
+        </div>
+        <div class="weapon-stats">
+            <formset>
+                <legend><b>Weapon Stats</b></legend> 
+                Weapon type:<select class="weapon-type">
+                  <option value="Sword">Sword</option>
+                  <option value="Dagger">Dagger</option>
+                  <option value="Ax">Ax</option>
+                  <option value="Hammer">Hammer</option>
+                  <option value="Mace">Mace</option>
+                  <option value="Measure">Measure</option>
+                  <option value="Greatsword">Greatsword</option>
+                  <option value="Katana">Katana</option>
+                  <option value="Ninja Sword">Ninja Sword</option>
+                  <option value="Spear">Spear</option>
+                  <option value="Pole">Pole</option>
+                  <option value="Rod">Rod</option>
+                  <option value="Staff">Staff</option>
+                  <option value="Bow">Bow</option>
+                  <option value="Crossbow">Crossbow</option>
+                  <option value="Gun">Gun</option>
+                  <option value="Hand-Bomb">Hand-Bomb</option>
+                </select><br>
+                Attack Power:<input type="number" name="attPower">
+            </formset>
+        </div>
+    </form>
+    <button>CALCULATE DAMAGE!</button>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="results">
+    <p><b><u>Results:</u></b></p>
+    <table>
+        <thead>
+            <tr>
+                <th>Character</th>
+                <th>Weapon</th>
+                <th>Speed</th>
+                <th>Evade</th>
+                <th>Combo/Crit</th>
+                <th>Damage Range</th>
+                <th># of Perks</th>
+                <th>Perks List</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+  </div>
+</body>
+</html>

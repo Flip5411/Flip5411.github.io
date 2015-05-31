@@ -1,0 +1,11 @@
+#link-meets-error {
+	display: block;
+	margin-top: 80px;
+	width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#error-message {
+	text-align: center;
+}
