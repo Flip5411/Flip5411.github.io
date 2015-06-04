@@ -32,6 +32,7 @@
 	border-radius: 10px;
 }
 
+
 /* product selection */
 .product_select {
 	position: absolute;
@@ -307,9 +308,10 @@ hr {
 	border-bottom: 1px solid #ebebeb;
 	color: white;
 	font-weight: bold;
+	text-align: right;
 }
 
-.RC_output tfoot td:first-child {
+.RC_output tfoot td:nth-child(2) {
 	border-radius: 0px 0px 0px 10px;
 	text-align: right;
 }
