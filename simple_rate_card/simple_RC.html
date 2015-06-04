@@ -63,8 +63,8 @@
 					<formset>
 						<legend><b>Input Budget</b></legend>
 						<p>Please input the total product value you wish to deliver the client (without Added Value), followed by the Added Value (if any).</p>
-						Product Value: $<input id="prodValInput" type="number" name="product_value" value="50000">
-						Added Value: $<input id="addValInput" type="number" name="added_value" value="0">
+						Product Value: $<input id="prodValInput" type="text" name="product_value" value="50000">
+						Added Value: $<input id="addValInput" type="text" name="added_value" value="0">
 					</formset>
 				</div>
 			</form>
@@ -101,12 +101,13 @@
 				</tbody>
 				<tfoot>
 					<tr>
+						<td style="display:none"></td> <!-- hidden cell to correct excel export formatting -->
 						<td colspan="2">Total:</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
+						<td id="totalProdVal"></td>
+						<td id="totalAddVal"></td>
+						<td id="totalClientCost"></td>
+						<td id="totalECPM"></td>
+						<td id="totalImpressions"></td>
 					</tr>
 				</tfoot>
 			</table>
